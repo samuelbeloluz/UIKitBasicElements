@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIStepper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bOl-iy-ZCi">
+                                <rect key="frame" x="149.66666666666666" y="410" width="94" height="32"/>
+                                <connections>
+                                    <action selector="tappedStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="BzT-24-WK7"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crk-mP-lbV">
+                                <rect key="frame" x="189" y="492" width="15" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m66-P5-mWN">
+                                <rect key="frame" x="25" y="84" width="343" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="l2U-ys-xgc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Crk-mP-lbV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PfY-88-Wtw"/>
+                            <constraint firstItem="m66-P5-mWN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="RTX-N5-vGN"/>
+                            <constraint firstItem="Crk-mP-lbV" firstAttribute="top" secondItem="bOl-iy-ZCi" secondAttribute="bottom" constant="50" id="aef-wF-Pog"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m66-P5-mWN" secondAttribute="trailing" constant="25" id="baE-VV-rif"/>
+                            <constraint firstItem="bOl-iy-ZCi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f3U-lB-MqC"/>
+                            <constraint firstItem="m66-P5-mWN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="fAC-M6-5Sm"/>
+                            <constraint firstItem="bOl-iy-ZCi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yRD-4K-ozE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lampImageView" destination="m66-P5-mWN" id="DqK-53-n20"/>
+                        <outlet property="stepper" destination="bOl-iy-ZCi" id="9Hl-Da-rDo"/>
+                        <outlet property="valueLabel" destination="Crk-mP-lbV" id="CLt-sh-8GS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
