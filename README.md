@@ -37,8 +37,28 @@ https://github.com/samuelbeloluz/UIKitBasicElements/assets/120046852/7301141b-18
 
 01. Clone the project
 ```bash
-  
   $ git clone https://github.com/samuelbeloluz/UIKitBasicElements.git
+````
+02. Choose the project to open in Xcode:
+```bash
+  $ cd UISwitch
+  $ open UISwitch.xcodeproj
+````
+```bash
+  $ cd UIStepper
+  $ open UIStepper.xcodeproj
+````
+```bash
+  $ cd UISlider
+  $ open UISlider.xcodeproj
+````
+```bash
+  $ cd UIImageView
+  $ open UIImageView.xcodeproj
+````
+```bash
+  $ cd ProgressView
+  $ open ProgressView.xcodeproj
 ````
 
 ## 📝 License
